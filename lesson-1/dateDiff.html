@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="./dateDiff/js/main.js"></script>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-evenly">
+      <h2>
+        <a
+          style="text-decoration: none"
+          href="./dateDiff.html"
+          rel="noopener noreferrer"
+          >Калькулятор дат</a
+        >
+      </h2>
+      <h2>
+        <a
+          style="text-decoration: none"
+          href="./sec.html"
+          rel="noopener noreferrer"
+          >Секундамер</a
+        >
+      </h2>
+      <h2>
+        <a style="text-decoration: none" href="/lesson-1/timer.html">Таймер</a>
+      </h2>
+    </div>
+    <form id="datecalc">
+      <h3>Калькулятор дат</h3>
+      <label>
+        <strong>Первая дата:</strong>
+        <input type="date" name="firstDate" />
+      </label>
+      <label>
+        <strong>Вторая дата:</strong>
+        <input type="date" name="secondDate" />
+      </label>
+      <button type="submit">Расчитать промежуток</button>
+      <p id="datecalc__result"></p>
+    </form>
+  </body>
+</html>
