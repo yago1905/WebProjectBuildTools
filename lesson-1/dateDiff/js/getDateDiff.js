@@ -1,16 +1,14 @@
-import { DateTime } from './luxon.js'
+import { DateTime } from './luxon.js';
 
-function getDateDiff (dateFrom, dateTo) {
-
+function getDateDiff(dateFrom, dateTo) {
   if (dateFrom > dateTo) {
-    [dateTo, dateFrom] = [dateFrom, dateTo]
+    [dateTo, dateFrom] = [dateFrom, dateTo];
   }
 
-  const dateFromObj = DateTime.fromISO(dateFrom)
-  const dateToObj = DateTime.fromISO(dateTo)
+  const dateFromObj = DateTime.fromISO(dateFrom);
+  const dateToObj = DateTime.fromISO(dateTo);
 
-  return dateToObj.diff(dateFromObj, ['years', 'months', 'days']).toObject()
-
+  return dateToObj.diff(dateFromObj, ['years', 'months', 'days']).toObject();
 }
 
-export default getDateDiff
+export default getDateDiff;
